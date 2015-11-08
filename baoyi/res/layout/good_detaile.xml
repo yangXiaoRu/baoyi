@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttons_layout"
+        android:background="#FFFFFF" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 系列图片 -->
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/goods_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:background="#e0e0e0" />
+            <!-- 物品基本信息 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hot_textview_banc"
+                        android:padding="6dp"
+                        android:text="这是分类"
+                        android:textColor="#ff6600"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="￥ 80"
+                        android:textColor="#ff6600"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/tv_yuanjia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="￥ 80"
+                        android:textSize="9dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="浏览次数：13"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e0e0e0" />
+            </LinearLayout>
+            <!-- 这是卖家基本信息 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <com.xiyou.baoyi.wanwan.view.CircleImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/touxiang_lingshi" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="100"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="杨小茹 | 充电宝" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="发布于：2015-12-23" />
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/guanzhu_bank"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="描述:这是描述这是描述这是描述这是描述这是描述这是描述这是描述" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e0e0e0" />
+            </LinearLayout>
+
+            <com.xiyou.baoyi.wanwan.view.MyListView
+                android:id="@+id/pinlun_listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#e0e0e0"
+                android:layout_marginBottom="40dp"
+                android:dividerHeight="1dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 底部的几个按钮 -->
+
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingTop="6dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e0e0e0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_pinglun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/pinlun_bank"
+                android:scaleType="matrix"
+                android:text="评论"
+                android:textColor="@drawable/text_color"
+                android:textSize="10dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/gou_bank"
+                android:scaleType="matrix"
+                android:text="我要了"
+                android:textColor="@color/main_color"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/call_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/call_bank"
+                android:scaleType="matrix"
+                android:text="联系TA"
+                android:textColor="@drawable/text_color"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- -底部评论输入框 -->
+    <RelativeLayout
+        android:background="#F0F0F0"
+        android:id="@+id/pinglun_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingTop="6dp"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/pingkun"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:background="@drawable/goods_bankground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/jsfks"
+            android:textColor="@color/textColor_hui"
+            android:hint="请输入评论"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/jsfks"
+            android:layout_margin="5dp"
+            android:textColor="#ffffff"
+            android:textSize="10dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/pingkun"
+            android:background="@drawable/btn_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="  发送  " />
+    </RelativeLayout>
+
+</RelativeLayout>

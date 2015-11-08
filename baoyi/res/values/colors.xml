@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="transparent">#00000000</color>
+     <color name="gray_bg">#fff0f0f0</color>
+     <color name="wirte">#ffffff</color>
+     <color name="black">#000000</color>
+         <color name="defult">#F5F5F5</color>
+    <color name="click">#ffffff</color>
+    
+      <color name="main_color">#7FFFD4</color>
+
+    <color name="main_color_darker">#59D3D4</color>
+    <color name="color_fen">#FFF0F5</color>
+    <color name="textColor_main">#FFFFFF</color>
+    <color name="textColor_hui">#484848</color>
+</resources>

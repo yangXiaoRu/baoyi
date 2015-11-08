@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.xiyou.baoyi.wanwan.view.DetailViewPager
+        android:id="@+id/image_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+   </com.xiyou.baoyi.wanwan.view.DetailViewPager>
+
+    <TextView
+        android:id="@+id/detail_image_num"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_gravity="right"
+        android:layout_margin="15dip"
+        android:background="@drawable/image_bg_num"
+        android:text="1/3"
+        android:gravity="center"
+        android:textSize="18sp" />
+
+</FrameLayout>

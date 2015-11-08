@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.baoyi"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.xiyou.baoyi.ad.aty.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiyou.baoyi.xinwa.aty.DetailImageAty" >
+        </activity>
+        <activity android:name="com.xiyou.baoyi.xinwa.aty.PullToRefreshAty" >
+        </activity>
+        <activity android:name="com.xiyou.baoyi.xinwa.aty.DetailGoodsAty" >
+        </activity>
+        <activity android:name="com.xiyou.baoyi.xinwa.aty.MyActivity" >
+        </activity>
+        <activity android:name="com.xiyou.baoyi.xinwa.aty.EditTextAty" >
+        </activity>
+        <activity android:name="com.richtext.xinwa.example.RichEditTextContent" >
+        </activity>
+        <activity android:name="com.xiyou.baoyi.xinwa.aty.Above_us_aty" >
+        </activity>
+        <activity android:name="com.xiyou.baoyi.xinwa.aty.ShowMessageAty" >
+        </activity>
+        <!-- <activity android:name="com.xiyou.baoyi.PullToRefreshAty"></activity> -->
+        <!-- ad -->
+        <activity
+            android:name="com.xiyou.baoyi.ad.aty.Second"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.xiyou.baoyi.ad.aty.TextActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.xiyou.baoyi.ad.aty.BookActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.xiyou.baoyi.ad.aty.LifeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.xiyou.baoyi.ad.aty.EleActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.xiyou.baoyi.ad.frament.FindActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.xiyou.baoyi.ad.frament.FreeBookActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.xiyou.baoyi.ad.frament.FreeCloseActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.xiyou.baoyi.ad.frament.FreeOtherActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.xiyou.baoyi.ad.frament.find.IssueAcyivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.xiyou.baoyi.ad.frament.find.MiaoActivity"
+            android:label="@string/app_name" >
+        </activity>
+         <!-- ad -->
+         <!-- wanwan -->
+         <activity android:name="com.xiyou.baoyi.wanwan.aty.GoodsDetailActivity" />
+        <activity android:name="com.xiyou.baoyi.wanwan.aty.WodeActivity" />
+
+        <receiver android:name="com.xiyou.baoyi.wanwan.receivers.open_receiver" >
+            <intent-filter>
+
+                <!-- 开机广播 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.xiyou.baoyi.wanwan.aty.DetailImageAty"></activity>
+         <activity android:name="com.xiyou.baoyi.wanwan.aty.ShukuActivity"></activity>
+         <!-- wanwan -->
+    </application>
+
+</manifest>

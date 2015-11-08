@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.xiyou.baoyi.wanwan.view.MyGridView
+        android:id="@+id/GridViewList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:layout_margin="10dp"
+        android:columnWidth="130dp"
+        android:horizontalSpacing="23dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="30dp" >
+    </com.xiyou.baoyi.wanwan.view.MyGridView>
+
+</LinearLayout>

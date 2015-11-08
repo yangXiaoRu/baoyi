@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:background="#7FFFD4"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.3"
+            android:background="#7FFFD4" />
+
+        <Button
+            android:id="@+id/button_find"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="15"
+            android:background="@drawable/shap_find"
+            android:drawableLeft="@drawable/teacherb"
+            android:text="Shop"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+
+            <Button
+                android:id="@+id/button_car"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/maine" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.01"
+        android:background="#D2B48C" />
+
+    <FrameLayout
+        android:id="@+id/login_frament"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7" >
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.01"
+        android:background="#D2B48C" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0.6"
+        android:background="#7FFFD4"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radiobutton1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/a"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="#696969"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/radiobutton2"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/b"
+            android:gravity="center"
+            android:text="书库"
+            android:textColor="#696969"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/radiobutton3"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/c"
+            android:gravity="center"
+            android:text="发现"
+            android:textColor="#696969"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/radiobutton4"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/d"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="#696969"
+            android:textSize="12dp" />
+    </RadioGroup>
+
+</LinearLayout>

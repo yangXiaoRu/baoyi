@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yang="http://schemas.android.com/apk/res/com.example.baoyi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <com.xiyou.baoyi.wanwan.view.CircleImageView
+            yang:svg_raw_resource="@raw/shape_heart"
+            android:id="@+id/pinlun_touxiang"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/pinlun_touxiang"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/pinlun_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="信息1301灵成"
+                android:textColor="@color/textColor_hui" />
+
+            <TextView
+                android:id="@+id/pinlun_xinxi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/message_banckground"
+                android:padding="10dp"
+                android:text="jakjkdjfkalfjaljflfjaldjkalfjaslfdjalfjaklfdjalfjldfjalfjlsfsgsdgdg"
+                android:textColor="@color/textColor_hui" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

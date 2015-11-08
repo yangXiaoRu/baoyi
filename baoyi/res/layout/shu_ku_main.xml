@@ -1,0 +1,242 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E0E0E0"
+    tools:context=".ShukuActivity" >
+
+    <!-- 搜索栏 -->
+
+    <LinearLayout
+        android:id="@+id/sousuo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#7FFFD4"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/kjfsl"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/logo" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"
+            android:background="@drawable/saerch_back"
+            android:hint="请输入书名"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/search" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rg_home"
+        android:layout_below="@+id/sousuo_layout" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 头部布局 -->
+
+
+            <!-- 广告 -->
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_guang_gao"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#FFFFFF" />
+
+            <!-- 大分类 -->
+
+            <LinearLayout
+                android:id="@+id/fenlei_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vp_guang_gao"
+                android:layout_marginTop="3dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:weightSum="6" >
+
+                    <RadioButton
+                        android:id="@+id/rb_kaoyan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="考研"
+                        android:textColor="@drawable/textcolor_selector" />
+
+                    <RadioButton
+                        android:id="@+id/rb_dianzi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:checked="false"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="电子"
+                        android:textColor="@drawable/textcolor_selector" />
+
+                    <RadioButton
+                        android:id="@+id/rb_jingji"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:checked="false"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="经济"
+                        android:textColor="@drawable/textcolor_selector" />
+
+                    <RadioButton
+                        android:id="@+id/rb_wenxue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:checked="false"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="文学"
+                        android:textColor="@drawable/textcolor_selector" />
+
+                    <RadioButton
+                        android:id="@+id/rb_waiyu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:checked="false"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="外语"
+                        android:textColor="@drawable/textcolor_selector" />
+
+                    <RadioButton
+                        android:id="@+id/rb_jisuanji"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:checked="false"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="计算机"
+                        android:textColor="@drawable/textcolor_selector" />
+                </RadioGroup>
+
+                <ImageView
+                    android:id="@+id/cursor"
+                    android:layout_width="50dp"
+                    android:layout_height="3dp"
+                    android:background="@drawable/line" />
+            </LinearLayout>
+
+            <!-- 商品展示区域 -->
+
+            <com.xiyou.baoyi.wanwan.view.MyViewPager
+                android:id="@+id/GoodsViewPager"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:layout_below="@+id/fenlei_layout"
+                android:background="#FFFFFF" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <!-- 底部按钮 -->
+<!-- 
+    <RadioGroup
+        android:id="@+id/rg_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingTop="3dp" >
+
+        <RadioButton
+            android:id="@+id/to_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/tab_home_selector"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="#8E8E8E" />
+
+        <RadioButton
+            android:id="@+id/to_shuku"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/tab_shuku_selector"
+            android:gravity="center"
+            android:text="书库"
+            android:textColor="#8E8E8E" />
+
+        <RadioButton
+            android:id="@+id/to_fabu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/tab_fabu_selector"
+            android:gravity="center"
+            android:text="发布"
+            android:textColor="#8E8E8E" />
+
+        <RadioButton
+            android:id="@+id/to_wode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/tab_wode_selector"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="#8E8E8E" />
+    </RadioGroup>
+ -->
+</RelativeLayout>

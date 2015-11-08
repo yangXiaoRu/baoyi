@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiyou.baoyi.xinwa.view.PullToRefreshView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_pull_refresh_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/pull_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/discover_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dip"
+                    android:background="@drawable/background" >
+
+                    <LinearLayout
+                        android:id="@+id/discover_head"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="40dip" >
+
+                        <ImageView
+                            android:layout_width="64dip"
+                            android:layout_height="64dip"
+                            android:background="@drawable/truck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="75dip"
+                        android:layout_below="@id/discover_head"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="10dip" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:padding="5dip"
+                                android:text="西邮市场"
+                                android:textColor="#f4f8f4"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="20dip"
+                                    android:text="商品:1万"
+                                    android:textColor="#f4f8f4"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="图文:1千"
+                                    android:textColor="#f4f8f4"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- head部分以上 -->
+
+
+                <!-- 头部以下 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="110dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="5dip"
+                            android:background="#D2CAC1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="8dip"
+                            android:paddingRight="8dip" >
+
+                            <TextView
+                                android:layout_width="22dip"
+                                android:layout_height="22dip"
+                                android:background="@drawable/head_hat" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dip"
+                                android:layout_marginLeft="5dip"
+                                android:padding="3dip"
+                                android:text="精品图文"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dip"
+                            android:layout_marginTop="3dip"
+                            android:background="#D2CAC1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="3dip" >
+
+                            <TextView
+                                android:layout_width="30dip"
+                                android:layout_height="25dip"
+                                android:layout_gravity="center"
+                                android:background="@drawable/head" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dip"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dip"
+                                android:paddingTop="6dip"
+                                android:text="卖家指南"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dip"
+                            android:layout_marginTop="3dip"
+                            android:background="#D2CAC1" />
+
+                        <LinearLayout
+                            android:id="@+id/discover_above_us"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="3dip" >
+
+                            <TextView
+                                android:layout_width="30dip"
+                                android:layout_height="25dip"
+                                android:layout_gravity="center"
+                                android:background="@drawable/head" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dip"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dip"
+                                android:paddingTop="6dip"
+                                android:text="关于我们"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="8dip"
+                        android:background="#D2CAC1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.xiyou.baoyi.xinwa.view.PullToRefreshListView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="5dip"
+                    android:focusableInTouchMode="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</com.xiyou.baoyi.xinwa.view.PullToRefreshView>
+<!--
+<LinearLayout
+        android:id="@+id/discover_publish_window"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:background="#4787c0"
+        android:orientation="horizontal"
+        android:padding="10dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/discover_publish_goods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="发布商品"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/discover_publish_article"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="发布文章"
+            android:textSize="18sp" />
+    </LinearLayout>
+-->

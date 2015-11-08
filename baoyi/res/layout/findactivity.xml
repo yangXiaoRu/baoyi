@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/find_radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/type_radiobutton1"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/shape_type"
+            android:button="@null"
+            android:checked="true"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:text="课本"
+            android:textSize="11dp" />
+
+        <RadioButton
+            android:id="@+id/type_radiobutton2"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/shape_type"
+            android:button="@null"
+            android:gravity="center"
+            android:text="图书"
+            android:textSize="11dp" />
+         <RadioButton
+            android:id="@+id/type_radiobutton4"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/shape_type"
+            android:button="@null"
+            android:gravity="center"
+            android:text="生活"
+            android:textSize="11dp" />
+
+        <RadioButton
+            android:id="@+id/type_radiobutton3"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/shape_type"
+            android:button="@null"
+            android:gravity="center"
+            android:text="电子"
+            android:textSize="11dp" />
+    </RadioGroup>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+        <EditText 
+            android:id="@+id/find_editText"
+            android:layout_width="300dp"
+            android:layout_height="fill_parent"
+            android:hint="     图书"
+            android:textSize="12dp"
+            android:background="@drawable/shape_edittext"
+            android:inputType="text"/>
+        <Button 
+            android:id="@+id/off_button"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:background="#00000000"
+            android:text="取消"
+            android:textSize="12dp"/>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/find_frament"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         >
+    </FrameLayout>
+
+</LinearLayout>

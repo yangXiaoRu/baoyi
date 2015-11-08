@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <ImageView
+            android:id="@+id/head_img"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/truck" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/head_img"
+            android:orientation="vertical"
+           >
+
+            <TextView
+                android:id="@+id/sale_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xinwa"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/sale_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1小时前"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="65dip"
+                android:layout_height="20dip"
+                android:text="几乎全新"
+                android:textColor="#33ff22"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dip"
+                android:text="¥40"
+                android:textColor="#FF3333"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/discover_layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <ImageView
+                android:id="@+id/discover_shopImg1"
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:layout_margin="6dip"
+                android:background="@drawable/motorcycle" />
+
+            <ImageView
+                android:id="@+id/discover_shopImg2"
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:layout_margin="6dip"
+                android:background="@drawable/linux" />
+
+            <ImageView
+                android:id="@+id/discover_shopImg3"
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:layout_margin="6dip"
+                android:background="@drawable/umbrella" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip" >
+
+            <TextView
+                android:id="@+id/discover_shop_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="买回来以后，没用过几次，低价出售"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/item_tab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/bg_gray"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="3dp"
+                android:text="箱包"
+                android:textColor="#f3f3f3"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/item_tab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/item_tab1"
+                android:background="@drawable/bg_gray"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="3dp"
+                android:text="东区"
+                android:textColor="#f3f3f3"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/image_save"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/heart" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/discover_layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <ImageView
+                android:id="@+id/discover_layout2_shopImg1"
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:layout_margin="6dip"
+                android:background="@drawable/motorcycle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip" >
+
+                    <TextView
+                        android:id="@+id/discover_layout2_shop_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="买回来以后，没用过几次，低价出售"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip" >
+
+                    <TextView
+                        android:id="@+id/layout2_item_tab1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/bg_gray"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="3dp"
+                        android:text="箱包"
+                        android:textColor="#f3f3f3"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/layout2_item_tab2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/layout2_item_tab1"
+                        android:background="@drawable/bg_gray"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="3dp"
+                        android:text="东区"
+                        android:layout_marginLeft="3dip"
+                        android:textColor="#f3f3f3"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/layout2_image_save"
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/heart" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/discover_layout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <ImageView
+                android:id="@+id/discover_layout3_shopImg1"
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:layout_margin="6dip"
+                android:background="@drawable/motorcycle" />
+
+            <ImageView
+                android:id="@+id/discover_layout3_shopImg2"
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:layout_margin="6dip"
+                android:background="@drawable/linux" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip" >
+
+            <TextView
+                android:id="@+id/discover_layout3_shop_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="买回来以后，没用过几次，低价出售"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/layout3_item_tab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/bg_gray"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="箱包"
+                android:textColor="#f3f3f3"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/layout3_item_tab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/layout3_item_tab1"
+                android:background="@drawable/bg_gray"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="东区"
+                android:textColor="#f3f3f3"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/layout3_image_save"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/heart" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

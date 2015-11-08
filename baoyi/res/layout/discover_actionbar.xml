@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dip"
+    android:background="#1e2228"
+    >
+    
+    <ImageButton 
+        android:id="@+id/discover_back"
+        android:layout_width="25dip"
+        android:layout_height="25dip"
+        android:background="@drawable/back"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="西邮市场"
+        android:textColor="#f4f8f4"
+        android:layout_marginLeft="15dip"
+        android:layout_toRightOf="@id/discover_back"
+        android:textSize="20sp"/>
+    <ImageButton 
+        android:id="@+id/discover_publish"
+        android:layout_width="25dip"
+        android:layout_height="25dip"
+        android:background="@drawable/camera"
+        android:layout_alignParentRight="true"/>
+    
+
+</RelativeLayout>
